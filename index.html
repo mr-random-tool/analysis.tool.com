@@ -212,17 +212,6 @@
                 <div id="message" class="error-message" style="display: none;"></div>
             </form>
         </section>
-        <section class="comments-section">
-            <h2>Comments and Reviews</h2>
-            <form id="commentForm">
-                <label for="commentName">Name:</label>
-                <input type="text" id="commentName" name="commentName" required>
-                <label for="commentText">Comment:</label>
-                <textarea id="commentText" name="commentText" rows="4" required></textarea>
-                <button type="button" onclick="handleComment()">Submit</button>
-            </form>
-            <div id="commentsContainer"></div>
-        </section>
         <section class="social-media">
             <a href="https://www.instagram.com/jst.galore._" target="_blank" class="social-icon instagram">Instagram</a>
             <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
@@ -237,7 +226,7 @@
             const password = document.getElementById('password').value;
             const message = document.getElementById('message');
 
-            if (password === '97442027paulmwangi') {
+            if (password === '97442027') {
                 message.style.display = 'none';
                 alert('Processing payment of $5...');
                 setTimeout(function() {
